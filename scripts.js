@@ -143,7 +143,7 @@ function VerifierTermine(){
 
       message.style.display = "none"
     }   
-    
+
     AfficherScore();
     finPartie.showModal();
     termine = true;
@@ -165,6 +165,7 @@ const pointCompteur = document.getElementById("carteCompteur");
 const tempsCompteur = document.getElementById("TempsCompteur");
 const recordCompteur = document.getElementById("recordCompteur");
 const recordFinPartie = document.getElementById("record");
+
 recordCompteur.innerText ="Record : "+localStorage.getItem('record');
 
 /**
