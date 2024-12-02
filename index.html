@@ -7,63 +7,111 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
+
+
+
+
 <body>
-  <section class="memory-game">
-    <div class="memory-card" data-framework="aurelia">
-      <img class="front-face" src="../img/aurelia.svg" alt="Aurelia" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+  <dialog id="dialog">
+    
+    <h1>Projet personnel</h1>
+    <hr>
+    <h3>Design web gr.2 - Automne 2024</h3>
+    <div id="contenu-dialogue">
+      <div >
+        <h2>Réalisé par</h2>
+        <h3>Félix Gagné</h3>
+        <br>
+        <h2>Inspiration</h2>
+        <a href="https://github.com/code-sketch/memory-game">https://github.com/code-sketch/memory-game</a>
+      </div>
+      <img id="megaman" src="img/megaman.png" alt="megaman">
     </div>
-    <div class="memory-card" data-framework="aurelia">
-      <img class="front-face" src="../img/aurelia.svg" alt="Aurelia" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+    
+    <button id="fermerDialog" autofocus>Fermer la fenêtre</button>
+    <p id="nePlusAfficher">Ne plus afficher cette fenêtre</p>
+  </dialog>
+
+  <dialog id="finDePartie">
+
+    <h1 id="fin">Partie terminée!</h1>
+    <div id="message">Nouveau record!</div>
+    <h2>Votre record:</h2>
+    <h2 id="record">0</h2>
+    <h2>Nombre de carte tournée:</h2>
+    <h2 id="point">0</h2>
+    <button id="bouttonRecommencer" onclick="Recommencer()">Recommencer</button>
+    
+  
+  </dialog>
+
+
+  <section id="sectionCompteur">
+    <div id="compteur">
+          <h1 id="recordCompteur">Record : 0</h1>
+      <h1 id="carteCompteur">Carte tournée : 0</h1>
+    
+      <h1 id="TempsCompteur">Temps : 0</h1>
     </div>
 
-    <div class="memory-card" data-framework="vue">
-      <img class="front-face" src="../img/vue.svg" alt="Vue" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="vue">
-      <img class="front-face" src="../img/vue.svg" alt="Vue" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-
-    <div class="memory-card" data-framework="angular">
-      <img class="front-face" src="../img/angular.svg" alt="Angular" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="angular">
-      <img class="front-face" src="../img/angular.svg" alt="Angular" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-
-    <div class="memory-card" data-framework="ember">
-      <img class="front-face" src="../img/ember.svg" alt="Ember" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="ember">
-      <img class="front-face" src="../img/ember.svg" alt="Ember" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-
-    <div class="memory-card" data-framework="backbone">
-      <img class="front-face" src="../img/backbone.svg" alt="Backbone" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="backbone">
-      <img class="front-face" src="../img/backbone.svg" alt="Backbone" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-
-    <div class="memory-card" data-framework="react">
-      <img class="front-face" src="../img/react.svg" alt="React" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="react">
-      <img class="front-face" src="../img/react.svg" alt="React" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
   </section>
 
+  <section class="memory-game">
+    <div class="memory-card" data-framework="aurelia">
+      <img class="front-face" src="./img/unoReverse.png" alt="reverse" />
+      <img class="back-face" src="./img/unoBack.png" alt="logoUno" />
+    </div>
+    <div class="memory-card" data-framework="aurelia">
+      <img class="front-face" src="./img/unoReverse.png" alt="reverse" />
+      <img class="back-face" src="./img/unoBack.png" alt="logoUno" />>
+    </div>
+
+    <div class="memory-card" data-framework="vue">
+      <img class="front-face" src="./img/plusQuatre.png" alt="plusQuatre" />
+      <img class="back-face" src="./img/unoBack.png" alt="logoUno" />
+    </div>
+    <div class="memory-card" data-framework="vue">
+      <img class="front-face" src="./img/plusQuatre.png" alt="plusQuatre" />
+      <img class="back-face" src="./img/unoBack.png" alt="logoUno" />
+    </div>
+
+    <div class="memory-card" data-framework="angular">
+      <img class="front-face" src="./img/plusDeux.png" alt="plusDeux" />
+      <img class="back-face" src="./img/unoBack.png" alt="logoUno" />
+    </div>
+    <div class="memory-card" data-framework="angular">
+      <img class="front-face" src="./img/plusDeux.png" alt="plusDeux" />
+      <img class="back-face" src="./img/unoBack.png" alt="logoUno" />
+    </div>
+
+    <div class="memory-card" data-framework="ember">
+      <img class="front-face" src="./img/Uno9.png" alt="carte9" />
+      <img class="back-face" src="./img/unoBack.png" alt="logoUno" />
+    </div>
+    <div class="memory-card" data-framework="ember">
+      <img class="front-face" src="./img/Uno9.png" alt="carte9" />
+      <img class="back-face" src="./img/unoBack.png" alt="logoUno" />
+    </div>
+
+    <div class="memory-card" data-framework="backbone">
+      <img class="front-face" src="./img/passTour.png" alt="passeTour" />
+      <img class="back-face" src="./img/unoBack.png" alt="logoUno" />
+    </div>
+    <div class="memory-card" data-framework="backbone">
+      <img class="front-face" src="./img/passTour.png" alt="passeTour" />
+      <img class="back-face" src="./img/unoBack.png" alt="logoUno" />
+    </div>
+
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="./img/changeCouleur.png" alt="changerCouleur" />
+      <img class="back-face" src="./img/unoBack.png" alt="logoUno" />
+    </div>
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="./img/changeCouleur.png" alt="changerCouleur" />
+      <img class="back-face" src="./img/unoBack.png" alt="logoUno" />
+    </div>
+  </section>
+  <button id="effacerStockage" onclick="EffacerStockage()">Effacer le stockage local</button>
   <script src="scripts.js"></script>
 </body>
 </html>
