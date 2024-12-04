@@ -78,3 +78,8 @@
     background-position: -120px;
     background-repeat:no-repeat
   }
+  #jeje{
+    background-color: rgb(255, 153, 0);
+    background-image: url(./img/boys.png);
+    background-position: -15px;
+  }
