@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    /* background-image: url(./img/texture.jpg); */
+    background-color: blueviolet;
+  }
+.jeux{
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 20px;
+  border: 2px solid black;
+  box-shadow: 10px 10px 10px black;
+}
+#Jeux{
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+#connect{
+
+  background-image: url(./img/connect.jpg);
+  background-size: 240px;
+  background-position: -24px;
+}
+#memoire{
+  background-image: url(./img/imgMemoire.png);
+  background-size: 192px;
+}
+#boutonTop{
+  position: absolute;
+  height: 45px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+  #Retour{
+    background-color: rgba(77, 76, 76, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px black;
+  }
+  
+  svg{
+    width: 35px;
+    border-radius: 10px;
+    background-color: rgba(77, 76, 76, 0.5);
+    padding: 5px;
+    
+    border: 2px solid;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px black;
+  }
+  #Retour:hover, svg:hover{
+    transform: translateY(2px);
+    box-shadow: none;
+  }
+  #Zach{
+    background-image: url(./img/Zach.jpg);
+    background-size: 400px;
+    background-position: -120px;
+    background-repeat:no-repeat
+  }

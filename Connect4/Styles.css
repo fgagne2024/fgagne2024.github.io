@@ -42,19 +42,39 @@ body{
     padding-right: 30px;
     padding-left: 30px;
 }
-#Retour{
-    background-color: rgba(77, 76, 76, 0.5);
-    color: white;
-    padding: 5px;
-    border-radius: 10px;
-    margin-left: 20px;
+#boutonTop{
+    position: absolute;
+    height: 45px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
   }
-
-  svg{
-    width: 35px;
-    border-radius: 10px;
-    background-color: rgba(77, 76, 76, 0.5);
-    padding: 5px;
+  
+    #Retour{
+      background-color: rgba(77, 76, 76, 0.5);
+      color: white;
+      padding: 5px;
+      border-radius: 10px;
+      margin-left: 20px;
+      cursor: pointer;
+      box-shadow: 0px 2px 5px black;
+    }
     
-    border: 2px solid;
-  }
+    svg{
+      width: 35px;
+      border-radius: 10px;
+      background-color: rgba(77, 76, 76, 0.5);
+      padding: 5px;
+      
+      border: 2px solid;
+      cursor: pointer;
+      box-shadow: 0px 2px 5px black;
+    }
+    #Retour:hover, svg:hover{
+      transform: translateY(2px);
+      box-shadow: none;
+    }
