@@ -25,6 +25,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
+  height: fit-content;
 }
 #connect{
 
@@ -82,4 +83,10 @@
     background-color: rgb(255, 153, 0);
     background-image: url(./img/boys.png);
     background-position: -15px;
+  }
+  #yoan{
+    background-image: url(./img/girafe.jpg);
+    background-size: 295px;
+    background-position: -40px;
+    background-repeat: no-repeat;
   }
