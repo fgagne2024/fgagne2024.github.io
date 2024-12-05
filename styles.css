@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
   }
   
   body {
@@ -11,6 +12,7 @@
     display: flex;
     /* background-image: url(./img/texture.jpg); */
     background-color: blueviolet;
+    
   }
 .jeux{
   width: 200px;
@@ -26,6 +28,11 @@
   flex-wrap: wrap;
   margin-top: 50px;
   height: fit-content;
+}
+.jeux:hover{
+
+  transform: translateY(15px);
+  box-shadow: none;
 }
 #connect{
 
@@ -89,4 +96,10 @@
     background-size: 295px;
     background-position: -40px;
     background-repeat: no-repeat;
+  }
+  #tom{
+    background-image: url(./img/imgTom.jpg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    
   }
