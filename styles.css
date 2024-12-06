@@ -103,3 +103,7 @@
     background-repeat: no-repeat;
     
   }
+  #ttt{
+    background-image: url(./img/ttt.png);
+    background-size: 198px;
+  }
