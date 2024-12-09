@@ -107,3 +107,8 @@
     background-image: url(./img/ttt.png);
     background-size: 198px;
   }
+  #did{
+    background-image: url(./img/imgDid.jpg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+  }
